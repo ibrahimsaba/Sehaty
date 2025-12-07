@@ -7,7 +7,7 @@ import { PrescriptionHistory } from '../models/prescriptionhistory-models';
   providedIn: 'root',
 })
 export class PrescriptionService {
-  private baseUrl = 'http://sehatymans.runasp.net/api/Prescriptions';
+  private baseUrl = 'https://sehatymans.runasp.net/api/Prescriptions';
 
   constructor(private _http: HttpClient) {}
 

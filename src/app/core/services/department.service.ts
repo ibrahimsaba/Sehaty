@@ -7,7 +7,7 @@ import { DepartmentCreate } from '../models/department.request.model';
   providedIn: 'root',
 })
 export class DepartmentService {
-  private baseUrl = 'http://sehatymans.runasp.net/api/Departments';
+  private baseUrl = 'https://sehatymans.runasp.net/api/Departments';
 
   constructor(private http: HttpClient) {}
 

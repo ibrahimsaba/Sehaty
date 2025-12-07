@@ -6,7 +6,7 @@ import { BillingResponseModel } from '../models/billing-response-model';
   providedIn: 'root',
 })
 export class BillingService {
-  baseUrl: string = 'http://sehatymans.runasp.net/api/Billing/';
+  baseUrl: string = 'https://sehatymans.runasp.net/api/Billing/';
   token = localStorage.getItem('token')!;
 
   constructor(private http: HttpClient) {}

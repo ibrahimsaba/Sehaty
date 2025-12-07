@@ -11,7 +11,7 @@ import { BookedAppointmentModel } from '../models/booked-appointment.model';
   providedIn: 'root',
 })
 export class DoctorAvailabilityService {
-  private baseUrl = 'http://sehatymans.runasp.net/api/DoctorAvailabilitySlots';
+  private baseUrl = 'https://sehatymans.runasp.net/api/DoctorAvailabilitySlots';
 
   constructor(private http: HttpClient) {}
 

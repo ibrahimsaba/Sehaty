@@ -7,7 +7,7 @@ import { PatientResponseModel } from '../models/patient-response-model';
   providedIn: 'root',
 })
 export class PatientsService {
-  baseUrl: string = 'http://sehatymans.runasp.net/api/Patients/';
+  baseUrl: string = 'https://sehatymans.runasp.net/api/Patients/';
 
   constructor(private _http: HttpClient) {}
 

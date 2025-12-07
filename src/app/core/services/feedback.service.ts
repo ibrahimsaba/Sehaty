@@ -10,7 +10,7 @@ import { map } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class FeedbackService {
-  private baseUrl: string = 'http://sehatymans.runasp.net/api/Feedbacks/';
+  private baseUrl: string = 'https://sehatymans.runasp.net/api/Feedbacks/';
   constructor(private http: HttpClient) {}
   add(feedback: FeedbackDto): Observable<FeedbackResponseModel> {
     return this.http

@@ -6,7 +6,8 @@ import { DoctorAvailableSlotsModel } from '../models/availability-slot-model';
   providedIn: 'root',
 })
 export class DoctorAvailableSlotService {
-  private baseUrl = 'http://sehatymans.runasp.net/api/DoctorAvailabilitySlots/';
+  private baseUrl =
+    'https://sehatymans.runasp.net/api/DoctorAvailabilitySlots/';
 
   constructor(private http: HttpClient) {}
 

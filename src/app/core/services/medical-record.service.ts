@@ -8,7 +8,7 @@ import { MedicalRecord } from '../models/medicalrecord-response.model';
   providedIn: 'root',
 })
 export class MedicalRecordService {
-  private baseUrl = 'http://sehatymans.runasp.net/api/MedicalRecords/';
+  private baseUrl = 'https://sehatymans.runasp.net/api/MedicalRecords/';
   token = localStorage.getItem('token');
 
   constructor(private http: HttpClient) {}

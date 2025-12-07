@@ -9,7 +9,7 @@ export type UserRole = 'Patient' | 'Receptionist' | null;
   providedIn: 'root',
 })
 export class AuthService {
-  baseUrl: string = 'http://sehatymans.runasp.net/api/Auth/';
+  baseUrl: string = 'https://sehatymans.runasp.net/api/Auth/';
 
   constructor(private _http: HttpClient) {}
 

@@ -6,7 +6,7 @@ import { DoctorResponseModel } from '../models/doctor-response-model';
   providedIn: 'root',
 })
 export class DoctorService {
-  private baseUrl = 'http://sehatymans.runasp.net/api/Doctors/';
+  private baseUrl = 'https://sehatymans.runasp.net/api/Doctors/';
 
   constructor(private http: HttpClient) {}
 

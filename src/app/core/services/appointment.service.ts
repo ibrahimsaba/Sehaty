@@ -15,7 +15,7 @@ import { ConfirmAppointmentResponse } from '../models/confirmappoitment.model';
   providedIn: 'root',
 })
 export class AppointmentService {
-  baseUrl: string = 'http://sehatymans.runasp.net/api/Appointments/';
+  baseUrl: string = 'https://sehatymans.runasp.net/api/Appointments/';
 
   constructor(private http: HttpClient) {}
 

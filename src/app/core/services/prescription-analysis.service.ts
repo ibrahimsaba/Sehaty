@@ -9,7 +9,7 @@ import { ApiResponse } from '../models/api-prescription-response';
   providedIn: 'root',
 })
 export class PrescriptionAnalysisService {
-  private readonly baseUrl = 'http://sehatymans.runasp.net/api/OpenAI';
+  private readonly baseUrl = 'https://sehatymans.runasp.net/api/OpenAI';
 
   constructor(private http: HttpClient) {}
 

@@ -7,7 +7,7 @@ import { User } from '../models/user-response';
   providedIn: 'root',
 })
 export class UserService {
-  private baseUrl = 'http://sehatymans.runasp.net/api';
+  private baseUrl = 'https://sehatymans.runasp.net/api';
 
   constructor(private http: HttpClient) {}
 
