@@ -11,6 +11,22 @@ const indexHtml = join(serverDistFolder, 'index.server.html');
 
 const app = express();
 const commonEngine = new CommonEngine();
+// Fake localStorage for SSR (Node environment)
+declare const global: any;
+
+if (
+  typeof global !== 'undefined' &&
+  typeof global.localStorage === 'undefined'
+) {
+  global.localStorage = {
+    getItem: (_key: string) => null,
+    setItem: (_key: string, _value: string) => {},
+    removeItem: (_key: string) => {},
+    clear: () => {},
+    key: (_index: number) => null,
+    length: 0,
+  };
+}
 
 /**
  * Example Express Rest API endpoints can be defined here.
@@ -31,8 +47,8 @@ app.get(
   '**',
   express.static(browserDistFolder, {
     maxAge: '1y',
-    index: 'index.html'
-  }),
+    index: 'index.html',
+  })
 );
 
 /**
